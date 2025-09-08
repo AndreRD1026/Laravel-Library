@@ -18,5 +18,14 @@ Route::get('/books', function () {
 })->name('books');
 
 
+Route::get('/authors', function () {
+    return Inertia::render('Authors');
+})->name('authors');
+
+Route::get('/categories', function () {
+    return Inertia::render('Categories');
+})->name('categories');
+
+
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
